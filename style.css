@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body {
+  height: 100vh;
+  background-color: rgb(153, 242, 200);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 90vw;
+  margin-top: 1em;
+  background-color: rgb(69, 68, 68);
+  padding: 3em 1.8em;
+  max-width: 37.8em;
+  border-radius: 1em;
+  box-shadow: 22px 2px 28px rgba(0, 0, 0, 0.4);
+}
+.search-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1.8em;
+}
+.search-container #movie-name,
+.search-container #search-button {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  padding: 1em 1.5em;
+  font-weight: bold;
+  font-size: 1em;
+}
+.search-container #search-button {
+  background-color: rgb(119, 215, 119);
+}
+.search-container #search-button:hover {
+  background-color: rgb(112, 197, 237);
+}
+#result {
+  color: white;
+  margin: 1em;
+}
+
+.info {
+  margin-top: 2em;
+  position: relative;
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  align-items: center;
+}
+.poster {
+  width: 100%;
+}
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+.rating {
+  display: flex;
+  margin: 0.6em 0 0.9em 8.5em;
+  gap: 0.6em;
+}
+.rating h4 {
+  font-weight: 500;
+  font-size: 1.1em;
+}
+.details {
+  display: flex;
+  font-size: 0.95em;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  color: #a0a0a0;
+  font-weight: 300;
+}
+.genre {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.6em 0;
+}
+.genre div {
+  border: 1px solid #a0a0a0;
+  padding: 0.4em;
+  border-radius: 0.4em;
+  font-weight: 400;
+}
+h3 {
+  font-weight: 200;
+  margin-top: 1.2em;
+}
+p {
+  font-weight: 300;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  text-align: justify;
+  color: #a0a0a0;
+}
+.margin {
+  margin-top: 3em;
+}
+.msg {
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .container {
+    font-size: 14px;
+  }
+  .info {
+    grid-template-columns: 1fr;
+  }
+  .poster {
+    margin: auto;
+    width: auto;
+    max-height: 10.8em;
+  }
+}
+@media screen and (max-width: 394px) {
+  .search-container {
+    gap: 0.8em;
+  }
+  .rating {
+    margin: 0.6em 0 0.9em 7.5em;
+  }
+}
+@media screen and (max-width: 376px) {
+  .search-container {
+    gap: 0.8em;
+  }
+  .search-container input {
+    width: 180px;
+  }
+  .container {
+    width: 90%;
+  }
+
+  .rating {
+    margin: 0.6em 0 0.9em 7.5em;
+  }
+}
+@media screen and (max-width: 361px) {
+  .rating {
+    margin: 0.6em 0 0.9em 6.5em;
+  }
+}
+@media screen and (max-width: 321px) {
+  .search-container input {
+    width: 140px;
+  }
+  .container {
+    margin-top: 19em;
+  }
+  .rating {
+    margin: 0.6em 0 0.9em 5.5em;
+  }
+}
